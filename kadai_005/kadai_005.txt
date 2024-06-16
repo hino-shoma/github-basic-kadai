@@ -1,0 +1,46 @@
+PS C:\Users\hinos\de2024\git_tutorial> cd ../
+PS C:\Users\hinos\de2024> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\hinos\de2024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/06/16      8:45                git_challenge
+
+
+PS C:\Users\hinos\de2024> cd .\git_challenge\
+PS C:\Users\hinos\de2024\git_challenge> git init
+Initialized empty Git repository in C:/Users/hinos/de2024/git_challenge/.git/
+PS C:\Users\hinos\de2024\git_challenge> echo >>hello_world.txt
+
+コマンド パイプライン位置 1 のコマンドレット Write-Output
+次のパラメーターに値を指定してください:
+InputObject[0]: ""
+InputObject[1]:  
+PS C:\Users\hinos\de2024\git_challenge> git add .\hello_world.txt
+PS C:\Users\hinos\de2024\git_challenge> git commit -m hello_world.txtを追加
+[main (root-commit) ea490a5] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\hinos\de2024\git_challenge> git add .\hello_world.txt
+PS C:\Users\hinos\de2024\git_challenge> git commit -m 日本語訳を追記
+[main 7303c79] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\hinos\de2024\git_challenge> git log
+commit 7303c79923cc29d1297ed13c20e71d9e63c82c8c (HEAD -> main)
+Author: hino-shoma <hino.syo4691@gmail.com>
+Date:   Sun Jun 16 08:54:30 2024 +0900
+
+    日本語訳を追記
+
+commit ea490a54387d45bbb91d5cfcbffbf21ede2565a3
+Author: hino-shoma <hino.syo4691@gmail.com>
+Date:   Sun Jun 16 08:52:16 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\hinos\de2024\git_challenge> git log --oneline
+7303c79 (HEAD -> main) 日本語訳を追記
+ea490a5 hello_world.txtを追加
+PS C:\Users\hinos\de2024\git_challenge> 
